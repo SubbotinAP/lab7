@@ -1,0 +1,131 @@
+body {
+  background: #1abc9c;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #ffffff;
+}
+
+.header img {
+  display: block;
+  width: 318px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.archive {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.article-author {
+  width: 50%;
+  float: left;
+  font-weight: bold;
+}
+
+.article-created-date {
+  text-align: right;
+  font-style: italic;
+}
+
+.article-text {
+  clear: both;
+  padding-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #ffffff;
+  color: #1abc9c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
+
+.add-post-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #16a085;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.add-post-btn:hover {
+  background-color: #1abc9c;
+}
+
+.errors {
+  color: #ffcccc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.auth-links {
+  position: absolute;
+  top: 10px;
+  right: 20px; /* Чуть отступим от края */
+}
+
+.auth-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dashed #ffffff;
+}
+
+.auth-link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Скрываем элементы поста, если у родителя .one-post есть класс .folded */
+.one-post.folded .article-author,
+.one-post.folded .article-created-date,
+.one-post.folded .article-text {
+  display: none;
+}
+
+/* Стили для кнопки (чтобы она выглядела нормально) */
+.fold-button {
+  background-color: #16a085;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.fold-button:hover {
+  background-color: #1abc9c;
+}
